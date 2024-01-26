@@ -20,7 +20,7 @@ export default async function RootLayout({
   return (
     <ClerkProvider>
       <html lang='en'>
-        <body className={inter.className}>
+        <body className={inter.className} suppressHydrationWarning={true}>
           <ToastProvider />
           <ModalProvider />
           {children}
